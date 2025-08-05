@@ -1,0 +1,18 @@
+.st-key-ct01 {
+    height: 5px;
+    background-color: rgb(241, 90, 41);
+    border-radius: 10px;
+}
+
+.st-key-stats {
+    border: 1px solid rgba(red, green, blue, 1);
+    margin: auto;
+}
+
+.st-key-dados {
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 150px;
+    
+}
+
