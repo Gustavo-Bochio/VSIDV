@@ -13,9 +13,9 @@ st.set_page_config(
     layout="wide",  # Optional: "centered" or "wide"
     initial_sidebar_state="auto",  # Optional: "auto", "expanded", or "collapsed"
     menu_items={  # Optional: Customize the "..." menu
-        'Get Help': 'https://www.extremelycoolapp.com/help',
-        'Report a bug': "https://www.extremelycoolapp.com/bug",
-        'About': "# This is a header. This is an *extremely* cool app!"
+        'Get Help': 'http://www.pagina-do-help.com.br',
+        'Report a bug': "http://www.pagina-de-bug.com.br",
+        'About': "# Esse é o header do app!"
     }
 )
 
@@ -165,6 +165,39 @@ if df is not None:
         
         col1.plotly_chart(fig2)
         col2.plotly_chart(bp_fig)
+
+    st.divider(width="stretch")
+    with st.container(key='correl'):
+        st.subheader('Correlacionando variáveis')
+
+        col11, col12 = st.columns([1, 1], gap='large')
+
+        lista = filtered_df.columns.tolist()
+
+
+        x_corr = col11.selectbox(
+            'Variável em x:',
+            lista)
+        
+        lista.remove(x_corr)
+        
+        y_corr = col12.selectbox(
+            'Variável em y:',
+            lista)
+
+        fig3 = px.scatter(filtered_df, x=x_corr, y=y_corr, color_discrete_sequence=px.colors.qualitative.Vivid, trendline="ols")
+        tl_results = px.get_trendline_results(fig3)
+
+        col11.plotly_chart(fig3)
+    
+        col12.write(tl_results.px_fit_results.iloc[0].summary())
+
+
+
+
+
+
+
     
 
 
