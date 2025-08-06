@@ -16,6 +16,8 @@ st.set_page_config(
 def load_css(file_path):
     with open(file_path) as f:
         st.html(f"<style>{f.read()}</style>")
+    # Adiciona fundo cinza claro para o modo claro
+
 
 css_path = pathlib.Path("style.css")
 load_css(css_path)
@@ -156,8 +158,9 @@ if df is not None:
         
         vec_nvar = np.ones(nvar)
 
-        cols = st.columns(vec_nvar, gap='medium')
-
+        cols = st.columns(vec_nvar, gap='medium') #Cria uma quantidade de colunas igual ao número de variáveis selecionadas
+        
+        #Seleção das variáveis a serem plotadas
         variable = [None] * nvar
         with st.container():
             for i, col in enumerate(cols):
@@ -167,39 +170,52 @@ if df is not None:
 
         col1, col2 = st.columns([2, 1], gap='medium')
 
+        #Criando os gráficos de linha e boxplot
+        #O gráfico de linha é plotado com a variável X_Value no eixo x e as variáveis selecionadas no eixo y
+        
         fig2 = px.line(filtered_df, x='X_Value', y=variable, color_discrete_sequence=px.colors.qualitative.Vivid)
-        bp_fig = px.box(filtered_df, y=variable)
+
+        #O boxplot é plotado com as variáveis selecionadas no eixo y
+        # Para colorir cada variável diferente, precisamos empilhar o dataframe e usar a coluna de variável como cor
+        melted_df = filtered_df[variable].melt(var_name='Variável', value_name='Valor')
+        bp_fig = px.box(melted_df, x='Variável', y='Valor', color='Variável', color_discrete_sequence=px.colors.qualitative.Vivid)
         
         col1.plotly_chart(fig2)
         col2.plotly_chart(bp_fig)
 
-    st.divider(width="stretch")
+    st.divider(width="stretch") #Linha horizontal divisória
+
+
+    # Terceira seção - correlação entre variáveis
     with st.container(key='correl'):
+
         st.subheader('Correlacionando variáveis')
 
         col11, col12 = st.columns([1, 1], gap='large')
 
         lista = filtered_df.columns.tolist()
 
-
         x_corr = col11.selectbox(
             'Variável em x:',
             lista)
         
-        lista.remove(x_corr)
+        lista.remove(x_corr) # Remove a variável selecionada de x da lista para evitar seleção duplicada
         
         y_corr = col12.selectbox(
             'Variável em y:',
             lista)
-
+        
+        #Cria o gráfico de dispersão com a variável selecionada em x e y
+        #Adiciona uma linha de tendência usando a regressão OLS
         fig3 = px.scatter(filtered_df, x=x_corr, y=y_corr, color_discrete_sequence=px.colors.qualitative.Vivid, trendline="ols")
         tl_results = px.get_trendline_results(fig3)
 
         col11.plotly_chart(fig3)
-    
-        col12.write(tl_results.px_fit_results.iloc[0].summary())
 
+        col12.write(tl_results.px_fit_results.iloc[0].summary()) #e exibe o resumo da regressão OLS
 
+else:
+    st.stop()       
 
 
 
