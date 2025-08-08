@@ -4,7 +4,9 @@ import plotly.express as px
 import numpy as np
 #from streamlit_elements import elements, mui, html
 import pathlib
+import json
 #import matplotlib as plt
+from statsmodels.tsa.seasonal import seasonal_decompose
 
 st.set_page_config(
     page_title="VSIDV",
@@ -13,15 +15,18 @@ st.set_page_config(
     initial_sidebar_state="auto",  # Optional: "auto", "expanded", or "collapsed"
 )
 
+#Carrega o CSS externo
 def load_css(file_path):
     with open(file_path) as f:
         st.html(f"<style>{f.read()}</style>")
-    # Adiciona fundo cinza claro para o modo claro
-
-
 css_path = pathlib.Path("style.css")
 load_css(css_path)
 
+#Carrega o arquivo JSON com informações dos sensores
+with open('sensores_lemi.json', 'r', encoding='utf-8') as sensors:
+        df_sensors = pd.DataFrame(json.load(sensors)['sensores'])
+
+#Cabeçalho do programa
 st.header('Bem-vindo!')
 st.write('Este é um programa para cálculo de parâmetros obtidos nos experimentos do Projeto VSIDV')
 
@@ -101,9 +106,15 @@ if df is not None:
         #Seleção da variável a ser plotada
         with col02.container():
             option = st.selectbox(
-            'Selecione uma variável para avaliação:',
-            df.columns, width=300)
-            option, '- Sensor xxx'
+                'Selecione uma variável para avaliação:',
+                df.columns, width=300)
+            
+            condition2 = (df_sensors['tag'] == option)
+            # Exibe o tipo e localização do sensor em texto menor
+            if condition2.any():
+                tipo = df_sensors[condition2]['tipo_sensor'].values[0]
+                local = df_sensors[condition2]['localizacao'].values[0]
+                st.caption(f"{tipo} - {local}")
 
 
         #Resumo estatístico
@@ -215,7 +226,8 @@ if df is not None:
         col12.write(tl_results.px_fit_results.iloc[0].summary()) #e exibe o resumo da regressão OLS
 
 else:
-    st.stop()       
+    st.stop()
+
 
 
 

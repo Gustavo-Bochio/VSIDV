@@ -1,0 +1,398 @@
+{
+
+  "sensores": [
+        {
+          "tag": "PIT-O-0301",
+          "tipo_sensor": "Transmissor Indicador de Pressão",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "tag": "PIT-M-0101",
+          "tipo_sensor": "Transmissor Indicador de Pressão",
+          "localizacao": "Tramo 1 da linha principal de escoamento"
+        },
+        {
+          "tag": "PIT-M-0301",
+          "tipo_sensor": "Transmissor Indicador de Pressão",
+          "localizacao": "Linha principal de escoamento"
+        },
+        {
+          "tag": "PIT-M-0302",
+          "tipo_sensor": "Transmissor Indicador de Pressão",
+          "localizacao": "Linha principal de escoamento"
+        },
+        {
+          "tag": "PIT-M-0401",
+          "tipo_sensor": "Transmissor Indicador de Pressão",
+          "localizacao": "Linha principal de escoamento, próximo ao visor de nível M-0401"
+        },
+        {
+          "tag": "PIT-A-0301",
+          "tipo_sensor": "Transmissor Indicador de Pressão",
+          "localizacao": "Linha de ar"
+        },
+        {
+          "tag": "PIT-S-0101",
+          "tipo_sensor": "Transmissor Indicador de Pressão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "PIT-S-0501",
+          "tipo_sensor": "Transmissor Indicador de Pressão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "PIT-S-0801",
+          "tipo_sensor": "Transmissor Indicador de Pressão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "PI-A-0101",
+          "tipo_sensor": "Indicador de Pressão",
+          "localizacao": "Linha de ar"
+        },
+        {
+          "tag": "PI-M-0401",
+          "tipo_sensor": "Indicador de Pressão",
+          "localizacao": "Linha principal de escoamento, próximo ao visor de nível M-0401"
+        },
+        {
+          "tag": "PI-S-0801",
+          "tipo_sensor": "Indicador de Pressão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "PI-S-0901",
+          "tipo_sensor": "Indicador de Pressão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "PI-S-0902",
+          "tipo_sensor": "Indicador de Pressão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "PI-S-0903",
+          "tipo_sensor": "Indicador de Pressão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "PI-S-094",
+          "tipo_sensor": "Indicador de Pressão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "nome_equipamento": "Transdutor de Pressão Manométrica",
+          "funcao_principal": "Medir a pressão interna do tanque separador de vazamento (SV)",
+          "status_instalacao": "Novo sensor adquirido"
+        },
+        {
+          "tag": "PIC-M-0101",
+          "tipo_sensor": "Controlador Indicador de Pressão",
+          "localizacao": "Tramo 1 da linha principal de escoamento"
+        },
+        {
+          "tag": "PSH-A-0101",
+          "tipo_sensor": "Chave de Pressão Alta",
+          "localizacao": "Linha de ar"
+        },
+        {
+          "tag": "PSH-M-0401",
+          "tipo_sensor": "Chave de Pressão Alta",
+          "localizacao": "Linha principal de escoamento, próximo ao visor de nível M-0401"
+        },
+        {
+          "tag": "PSH-S-0101",
+          "tipo_sensor": "Chave de Pressão Alta",
+          "localizacao": "Linha de SF6/gás (também referida como PHS S-0101)"
+        },
+        {
+          "tag": "TIT-O-0301",
+          "tipo_sensor": "Transmissor Indicador de Temperatura",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "tag": "TIT-M-0301",
+          "tipo_sensor": "Transmissor Indicador de Temperatura",
+          "localizacao": "Linha principal de escoamento"
+        },
+        {
+          "tag": "TIT-M-0302",
+          "tipo_sensor": "Transmissor Indicador de Temperatura",
+          "localizacao": "Linha principal de escoamento"
+        },
+        {
+          "tag": "TIT-M-0401",
+          "tipo_sensor": "Transmissor Indicador de Temperatura",
+          "localizacao": "Linha principal de escoamento, próximo ao visor de nível M-0401"
+        },
+        {
+          "tag": "TIT-M-0601",
+          "tipo_sensor": "Transmissor Indicador de Temperatura",
+          "localizacao": "Tanque T-M-0601"
+        },
+        {
+          "tag": "TIT-A-0301",
+          "tipo_sensor": "Transmissor Indicador de Temperatura",
+          "localizacao": "Linha de ar"
+        },
+        {
+          "tag": "TIT-S-0101",
+          "tipo_sensor": "Transmissor Indicador de Temperatura",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "TIT-S-0501",
+          "tipo_sensor": "Transmissor Indicador de Temperatura",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "TIT-W-0301",
+          "tipo_sensor": "Transmissor Indicador de Temperatura",
+          "localizacao": "Linha de água"
+        },
+        {
+          "nome_equipamento": "PT100",
+          "funcao_principal": "Medir a temperatura interna do tanque separador de vazamento (SV)",
+          "status_instalacao": "Novo sensor adquirido"
+        },
+        {
+          "tag": "FT-O-0301",
+          "tipo_sensor": "Transmissor de Vazão",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "tag": "FT-O-0302",
+          "tipo_sensor": "Transmissor de Vazão",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "tag": "FT-O-0303",
+          "tipo_sensor": "Transmissor de Vazão",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "tag": "FT-O-0601",
+          "tipo_sensor": "Transmissor de Vazão",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "tag": "FT-O-0602",
+          "tipo_sensor": "Transmissor de Vazão",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "tag": "FT-O-0603",
+          "tipo_sensor": "Transmissor de Vazão",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "nome_equipamento": "Medidor de Vazão Tipo Turbina",
+          "marca": "TECHMETER",
+          "modelo": "TCM-06-IBEA",
+          "funcao_principal": "Medir vazão de líquido",
+          "detalhes_tecnicos": "Faixa de 0.06 a 0.6 m³/h"
+        },
+        {
+          "nome_equipamento": "Medidor de Vazão Tipo Turbina",
+          "marca": "TECHMETER",
+          "modelo": "TCM-15-IBEA",
+          "funcao_principal": "Medir vazão de líquido",
+          "detalhes_tecnicos": "Faixa de 0.4 a 8 m³/h"
+        },
+        {
+          "nome_equipamento": "Medidor de Vazão Tipo Turbina",
+          "marca": "TECHMETER",
+          "modelo": "TCM-50-ABEA",
+          "funcao_principal": "Medir vazão de líquido",
+          "detalhes_tecnicos": "Faixa de 2 a 40 m³/h"
+        },
+        {
+          "tag": "FT-A-0301",
+          "tipo_sensor": "Transmissor de Vazão",
+          "localizacao": "Linha de ar"
+        },
+        {
+          "tag": "FIT-S-0501",
+          "tipo_sensor": "Transmissor Indicador de Vazão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "XF-A-0301",
+          "tipo_sensor": "Elemento de Vazão",
+          "localizacao": "Linha de ar"
+        },
+        {
+          "tag": "XF-O-0301",
+          "tipo_sensor": "Elemento de Vazão",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "tag": "XF-O-0601",
+          "tipo_sensor": "Elemento de Vazão",
+          "localizacao": "Linha de óleo"
+        },
+        {
+          "tag": "XF-S-0501",
+          "tipo_sensor": "Elemento de Vazão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "XF-S-0701",
+          "tipo_sensor": "Elemento de Vazão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "XF-S-0901",
+          "tipo_sensor": "Elemento de Vazão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "XF-S-0904",
+          "tipo_sensor": "Elemento de Vazão",
+          "localizacao": "Linha de SF6/gás"
+        },
+        {
+          "tag": "FT-W-0301",
+          "tipo_sensor": "Transmissor de Vazão",
+          "localizacao": "Linha de água"
+        },
+        {
+          "tag": "FT-W-0302",
+          "tipo_sensor": "Transmissor de Vazão",
+          "localizacao": "Linha de água"
+        },
+        {
+          "nome_equipamento": "Medidor de Vazão Coriolis",
+          "marca": "YOKOGAWA",
+          "modelo": "RCEP50S-50BA20-0700-NN00-2-JB1",
+          "funcao_principal": "Medir vazão mássica de gás (SF6)",
+          "detalhes_tecnicos": "Faixa de 42 a 3062 kg/h",
+          "localizacao": "Seção de medição e controle"
+        },
+        {
+          "nome_equipamento": "Sensor Coriolis",
+          "marca": "ROTAMASS TI PRIME ULTIMATE",
+          "modelo": "Ultimate 29t/h",
+          "funcao_principal": "Medir vazão mássica",
+          "status_instalacao": "Adquirido e será instalado na plataforma experimental"
+        },
+        {
+          "nome_equipamento": "Novo Sensor Coriolis",
+          "funcao_principal": "Garantir melhor precisão em baixas vazões de gás",
+          "status_instalacao": "Em processo de instalação na linha de SF6"
+        },
+        {
+          "tag": "PDT-M-0401",
+          "tipo_sensor": "Transmissor de Pressão Diferencial",
+          "localizacao": "Linha principal de escoamento, próximo ao visor de nível M-0401"
+        },
+        {
+          "tag": "PDT-M-0601",
+          "tipo_sensor": "Transmissor de Pressão Diferencial",
+          "localizacao": "Tanque T-M-0601 (provavelmente para medição de nível indireta)"
+        },
+        {
+          "tag": "PDT-ST",
+          "tipo_sensor": "Transmissor de Pressão Diferencial",
+          "detalhes_tecnicos": "Calibração: -3 a 3 bar"
+        },
+        {
+          "tag": "PDT-297101",
+          "tipo_sensor": "Transmissor de Pressão Diferencial",
+          "detalhes_tecnicos": "Calibração: -10 a 10 bar"
+        },
+        {
+          "tag": "PDT-297103",
+          "tipo_sensor": "Transmissor de Pressão Diferencial",
+          "detalhes_tecnicos": "Calibração: -40 a 40 bar"
+        },
+        {
+          "nome_equipamento": "Transdutor de Pressão Diferencial",
+          "funcao_principal": "Medida indireta da altura de nível do líquido no tanque separador de vazamento (SV)",
+          "status_instalacao": "Novo sensor adquirido"
+        },
+        {
+          "nome_equipamento": "Novos Transdutores de Pressão Diferencial",
+          "marca": "Validyne",
+          "funcao_principal": "Medições de alta precisão e resposta rápida",
+          "status_instalacao": "Serão adicionados à linha de alta pressão, com mangueiras de comunicação seladas"
+        },
+        {
+          "tag": "LIC-M-0401",
+          "tipo_sensor": "Controlador Indicador de Nível",
+          "localizacao": "Tanque T-M-0401"
+        },
+        {
+          "tag": "LSH-M-0401",
+          "tipo_sensor": "Chave de Nível Alto",
+          "localizacao": "Tanque T-M-0401"
+        },
+        {
+          "tag": "LSL-M-0401",
+          "tipo_sensor": "Chave de Nível Baixo",
+          "localizacao": "Tanque T-M-0401"
+        },
+        {
+          "tag": "LSH-M-0601",
+          "tipo_sensor": "Chave de Nível Alto",
+          "localizacao": "Tanque T-M-0601"
+        },
+        {
+          "tag": "LSL-O-0601",
+          "tipo_sensor": "Chave de Nível Baixo",
+          "localizacao": "Tanque T-M-0601 (referente ao óleo)"
+        },
+        {
+          "tag": "LG-M-0401",
+          "tipo_sensor": "Visor de Nível/Medidor de Nível",
+          "localizacao": "Linha principal de escoamento"
+        },
+        {
+          "tag": "LG-M-0601",
+          "tipo_sensor": "Visor de Nível/Medidor de Nível",
+          "localizacao": "Tanque T-M-0601"
+        },
+        {
+          "nome_equipamento": "Densitômetro de Raios Gama",
+          "marca": "Berthold Technologies",
+          "modelo": "Cs7.P02",
+          "funcao_principal": "Medir a fração volumétrica in-situ de cada fase (gás-líquido) ao longo da seção transversal dos tubos",
+          "detalhes_tecnicos": "Sensor não intrusivo com alta resolução espacial, colimador de fenda de 0.5 mm, sistema de deslocamento vertical para varreduras"
+        },
+        {
+          "nome_equipamento": "Câmera de Alta Velocidade",
+          "marca": "Olympus",
+          "modelo": "i-SPEED 3",
+          "funcao_principal": "Identificação visual dos padrões de escoamento",
+          "detalhes_tecnicos": "Câmera principal, filmagens com boa definição e alta taxa de quadros (até 150.000 fps)"
+        },
+        {
+          "nome_equipamento": "Câmera de Alta Velocidade",
+          "marca": "GoPro",
+          "modelo": "Hero 10 5K",
+          "funcao_principal": "Identificação visual dos padrões de escoamento (câmera auxiliar)",
+          "detalhes_tecnicos": "Filmagens com alta resolução espacial (até 240 fps)"
+        },
+        {
+          "nome_equipamento": "Câmera de Alta Velocidade",
+          "marca": "Samsung",
+          "modelo": "Galaxy S23 Ultra",
+          "funcao_principal": "Identificação visual dos padrões de escoamento (celular)",
+          "detalhes_tecnicos": "Capaz de produzir vídeos em Full HD e 960 fps"
+        },
+        {
+          "nome_equipamento": "Acelerômetros",
+          "marca": "PCB Piezotronics",
+          "modelo": "Platinum Stock ceramic shear ICP accelerometer 100mV/g 0.5 a 3kHz",
+          "funcao_principal": "Medições de vibração no experimento",
+          "detalhes_tecnicos": "Cinco unidades adquiridas",
+          "status_instalacao": "Serão utilizadas"
+        },
+        {
+          "nome_equipamento": "Detector de SF6",
+          "funcao_principal": "Detectar possíveis pontos de vazamento de gás e garantir a segurança operacional",
+          "status_instalacao": "Adquirido"
+        }
+]
+}
